@@ -18,7 +18,7 @@ void print() {
 	cout << endl;
 }
 
-
+// i = posicio actual, falta = parells lletjos encara per crear
 void f(int i, int falta) {
 	if (i == n and falta == 0) return print();
 	if (i == n or falta > n - i or falta < 0) return;
