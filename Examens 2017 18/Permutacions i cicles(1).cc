@@ -36,7 +36,7 @@ void f(int i, int ini, int caselles, int cicles) {
 			s[i] = x;
 			us[x] = true;
 			if (x == ini) f(non_used(), non_used(), caselles - 1, cicles - 1);	// hem tancat un cicle (x = ini)
-			else f(x, ini, caselles - 1, cicles); 								// no hem tancat un cicle (x != ini)
+			else f(x, ini, caselles - 1, cicles); 					// no hem tancat un cicle (x != ini)
 			us[x] = false;
 		}
 	}
